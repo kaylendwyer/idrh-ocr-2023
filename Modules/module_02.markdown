@@ -1,8 +1,9 @@
 ---
 layout: page
-title: This is a module
-permalink: /module 1/
-nav_order: 1
+title: Another module
+permalink: /module-2/
+nav_order: 2
+parent: Modules
 ---
 
 # Title of page

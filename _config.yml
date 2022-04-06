@@ -20,9 +20,7 @@
 
 title: Intro to OCR & Unix Shell
 email: idrh@ku.edu
-description: >- # this means to ignore newlines until "baseurl:"
- Instructors - Kaylen Dwyer, Digital Media Specialist, The Institute for Digital Research in the Humanities
-Jamene Brooks-Kieffer, Associate Librarian / Data Services Librarian & Coordinator of Digital Scholarship, University of Kansas Libraries
+description: >- # this means to ignore newlines until "baseurl:" 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: idrh_KU
@@ -32,6 +30,12 @@ github_username:  kaylendwyer
 theme: "just-the-docs"
 plugins:
   - jekyll-feed
+
+aux_links:
+  "The Institute for Digital Research in the Humanities":
+    - "https://idrh.ku.edu/"
+  "View on GitHub":
+    - "//github.com/kaylendwyer/idrh-ocr-2022"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
