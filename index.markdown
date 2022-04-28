@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: home
+nav_order: 1
 ---
 # Introduction to OCR & the Unix Shell: Creating a text-as-data corpus from digitized books
 Friday, April 29, 2022 12pm to 2pm
