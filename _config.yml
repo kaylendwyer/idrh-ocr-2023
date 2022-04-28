@@ -21,13 +21,14 @@
 title: Intro to OCR & Unix Shell
 email: idrh@ku.edu
 description: >- # this means to ignore newlines until "baseurl:" 
-baseurl: "/idrh-ocr-2022" # the subpath of your site, e.g. /blog
-url: "https://kaylendwyer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: idrh_KU
 github_username:  kaylendwyer
 
 # Build settings
 theme: "just-the-docs"
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
 
