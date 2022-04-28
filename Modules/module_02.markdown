@@ -9,3 +9,7 @@ parent: Modules
 # Introduction to OCR
 
 Some content goes here
+
+## Before we run OCR
+### Image capture & selection
+### Image preprocessing
