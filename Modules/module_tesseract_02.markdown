@@ -1,57 +1,11 @@
 ---
 layout: page
-title: Tesseract Basics
-permalink: /tesseract-basics/
-nav_order: 3
+title: Parameters
+permalink: /parameters/
+nav_order: 4
 parent: Modules
 ---
-
-# OCR with Tesseract
-
-## The Basics
-
-Tesseract's default settings are set to recognize English language, use automatic page segmentation (recognizing page format and columns), and genarate a plain text file.
-
-The simplest way to invoke tesseract :
-```
-tesseract myimage.jpg myimage
-```
-
-### Example: Basic OCR
-<img alt="A Christmas Carol" src="../data/christmas-carol-pg1.jpg" width="600px"/>
-
-Input:
-
-```
-tesseract christmas-carol-pg1.jpg christmas-carol-pg1-output
-```
-
-Result:
-
-```
-A CHRISTMAS CAROL.
-
-STAVE I.
-
-MARLEY’S GHOST.
-
-Marry was dead: to begin with. There is no
-doubt whatever about that. The register of his
-burial was signed by the clergyman, the clerk, the
-undertaker, and the chief mourner. Scrooge signed
-it: and Scrooge’s name was good upon ‘Change, for
-anything he chose to put his hand to. Old Marley
-was as dead as a door-nail.
-
-Mind! I don’t mean to say that I know, of my
-own knowledge, what there is particularly dead
-about a door-nail. I might have been inclined,
-myself, to regard a coffin-nail as the deadest piece
-of ironmongery in the trade. But the wisdom of
-
-our ancestors is in the simile; and my unhallowed
-B
-```
+# Parameters
 
 ## Language Parameter
 For documents in languages other than English, it is often necessary to specify the language(s) or script(s). The ```-l``` flag allows you to select one or multiple languages, specified by  
@@ -175,7 +129,7 @@ Children, Spanish Soldiers, Spectators, Intellectuals, Acade-
 micians, Nuns, etc.
 ```
 
-On this document, PSM 11 (Sparse Text: Find as Much Text as Possible in No Particular Order) did the trick. 
+On this document, PSM 11 (Sparse Text: Find as Much Text as Possible in No Particular Order) does the trick. The Sparse Text model is particularly useful when you don't care about the *order* of the text, but rather the text itself. It can also be helpful to retrieve the maximum amount of text from pages with more complex structures (multiple columns, newspapers with advertisements, etc.).
 
 
 Input:
@@ -204,84 +158,6 @@ RacuENEAU
 
 A Cut-Purse
 
-Le Brer
-
-A Spectator
-
-Carson DE CasTEL-JALOUX
-
-A Sentry
-
-The Cadets
-
-Bertrandou the Fifer
-
-LicnizRE
-
-A Capuchin
-
-Two Musicians
-
-VicoMTE DE VALVERT
-
-A Marouts
-
-The Poets
-
-Second Marquis
-
-The Pastrycooks
-
-Third Marquis
-
-The Pages
-
-Montfleury
-
-Roxang
-
-Bellerose
-
-Her Dusnna
-
-Lisz
-
-Jodelet
-
-Cuicy
-
-Tue Orancz-Girt
-
-BrissAILLE
-
-Moruer MarcufrirTs DE Jésus
-
-A Meddler
-
-Sister MARTHE
-
-A Musketeer
-
-StsTER CLAIRE
-
-Another Musketeer
-
-An Actress
-
-A Soubrette
-
-A Spanish Officer
-
-A Cavalier
-
-The Flower-Girl
-
-The Crowd, Citizens, Marquis, Musketeers, Thieves, Pas-
-
-trycooks, Poets, Cadets of Gascoyne, Actors, Violins, Pages,
-
-Children, Spanish Soldiers, Spectators, Intellectuals, Acade-
-
-micians, Nuns, etc.
+...
 
 ```
