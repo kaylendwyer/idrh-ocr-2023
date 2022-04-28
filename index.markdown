@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: home
+title: Home
 nav_order: 1
 ---
 # Introduction to OCR & the Unix Shell: Creating a text-as-data corpus from digitized books
