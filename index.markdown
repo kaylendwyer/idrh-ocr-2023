@@ -4,3 +4,20 @@
 
 layout: home
 ---
+# Introduction to OCR & the Unix Shell: Creating a text-as-data corpus from digitized books
+Friday, April 29, 2022 12pm to 2pm
+
+
+Optical Character Recognition (OCR) software converts scanned images of typed, handwritten, or printed text into machine-readable and searchable files. This hands-on workshop will teach participants how to use OCR with printed text to create a text corpus for humanities data analysis. We will look at the basics of OCR, tools for processing, and introduce workflows for building a text-as-data corpus from printed text. We’ll learn how to use Tesseract-OCR, an open-source command line program.  
+
+For humanists without experience working in the command line, the first hour of the workshop (12-1pm) will be a primer on the command line interface—what it’s for, how to open it, how to navigate directories, and how to manipulate files. 
+
+The second hour (1-2pm) will dig into OCR and how to use Tesseract for extracting structured information from a page. 
+
+
+
+## Instructors:
+
+Jamene Brooks-Kieffer, Associate Librarian / Data Services Librarian & Coordinator of Digital Scholarship, University of Kansas Libraries
+
+Kaylen Dwyer, Digital Media Specialist, The Institute for Digital Research in the Humanities
