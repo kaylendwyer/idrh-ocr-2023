@@ -1,46 +1,70 @@
 {"0": {
-    "doc": "A module",
-    "title": "Title of page",
+    "doc": "Unix Shell",
+    "title": "Introduction to the Shell",
     "content": "Some content goes here . ",
-    "url": "http://localhost:4000/idrh-ocr-2022/module-1/#title-of-page",
-    "relUrl": "/module-1/#title-of-page"
+    "url": "http://localhost:4000/idrh-ocr-2022/unix-shell/#introduction-to-the-shell",
+    "relUrl": "/unix-shell/#introduction-to-the-shell"
   },"1": {
-    "doc": "A module",
-    "title": "A module",
+    "doc": "Unix Shell",
+    "title": "Unix Shell",
     "content": " ",
-    "url": "http://localhost:4000/idrh-ocr-2022/module-1/",
-    "relUrl": "/module-1/"
+    "url": "http://localhost:4000/idrh-ocr-2022/unix-shell/",
+    "relUrl": "/unix-shell/"
   },"2": {
-    "doc": "Another module",
-    "title": "Title of page",
+    "doc": "Introduction to OCR",
+    "title": "Introduction to OCR",
     "content": "Some content goes here . ",
-    "url": "http://localhost:4000/idrh-ocr-2022/module-2/#title-of-page",
-    "relUrl": "/module-2/#title-of-page"
+    "url": "http://localhost:4000/idrh-ocr-2022/introduction-to-ocr/",
+    "relUrl": "/introduction-to-ocr/"
   },"3": {
-    "doc": "Another module",
-    "title": "Another module",
-    "content": " ",
-    "url": "http://localhost:4000/idrh-ocr-2022/module-2/",
-    "relUrl": "/module-2/"
-  },"4": {
     "doc": "Modules",
     "title": "Modules",
     "content": " ",
     "url": "http://localhost:4000/idrh-ocr-2022/modules/",
     "relUrl": "/modules/"
-  },"5": {
+  },"4": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "http://localhost:4000/idrh-ocr-2022/resources/",
     "relUrl": "/resources/"
-  },"6": {
-    "doc": "Setup",
-    "title": "Setting up your computer",
+  },"5": {
+    "doc": "Resources",
+    "title": "OCR",
     "content": " ",
-    "url": "http://localhost:4000/idrh-ocr-2022/setup/#setting-up-your-computer",
-    "relUrl": "/setup/#setting-up-your-computer"
+    "url": "http://localhost:4000/idrh-ocr-2022/resources/#ocr",
+    "relUrl": "/resources/#ocr"
+  },"6": {
+    "doc": "Resources",
+    "title": "More on Tesseract",
+    "content": " ",
+    "url": "http://localhost:4000/idrh-ocr-2022/resources/#more-on-tesseract",
+    "relUrl": "/resources/#more-on-tesseract"
   },"7": {
+    "doc": "Resources",
+    "title": "Alternative tools",
+    "content": " ",
+    "url": "http://localhost:4000/idrh-ocr-2022/resources/#alternative-tools",
+    "relUrl": "/resources/#alternative-tools"
+  },"8": {
+    "doc": "Setup",
+    "title": "Setting things up",
+    "content": " ",
+    "url": "http://localhost:4000/idrh-ocr-2022/setup/#setting-things-up",
+    "relUrl": "/setup/#setting-things-up"
+  },"9": {
+    "doc": "Setup",
+    "title": "Workshop setup",
+    "content": "A description of what attendees need to do, but also a place to describe what we did, in case others want to replicate this? . ",
+    "url": "http://localhost:4000/idrh-ocr-2022/setup/#workshop-setup",
+    "relUrl": "/setup/#workshop-setup"
+  },"10": {
+    "doc": "Setup",
+    "title": "Working at home",
+    "content": "Installation . Downloads . ",
+    "url": "http://localhost:4000/idrh-ocr-2022/setup/#working-at-home",
+    "relUrl": "/setup/#working-at-home"
+  },"11": {
     "doc": "Setup",
     "title": "Setup",
     "content": " ",

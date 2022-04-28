@@ -1,11 +1,11 @@
 ---
 layout: page
-title: A module
-permalink: /module-1/
+title: Unix Shell
+permalink: /unix-shell/
 nav_order: 1
 parent: Modules
 ---
 
-# Title of page
+# Introduction to the Shell
 
 Some content goes here

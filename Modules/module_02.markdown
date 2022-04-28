@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Another module
-permalink: /module-2/
+title: Introduction to OCR
+permalink: /introduction-to-ocr/
 nav_order: 2
 parent: Modules
 ---
 
-# Title of page
+# Introduction to OCR
 
 Some content goes here
