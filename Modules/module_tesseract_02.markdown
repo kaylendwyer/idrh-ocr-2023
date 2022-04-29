@@ -7,6 +7,15 @@ parent: Modules
 ---
 # Parameters
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## Language Parameter
 For documents in languages other than English, it is often necessary to specify the language(s) or script(s). The ```-l``` flag allows you to select one or multiple languages, specified by  
 
@@ -14,7 +23,7 @@ Languages are specificed by codes 2-4 letters long, such as ```eng``` (English),
 
 Read more: [Tesseract: Languages & Scripts](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#languages-and-scripts)
 
-### Example: Set language parameter
+**Example: Set language parameter**
 <img alt="Cyrano De Bergerac French" src="../data/cyrano_fra_cover.jpg" width="600px"/>
 
 ```
@@ -48,6 +57,29 @@ Use Lang+Lang for multilingual documents:
 tesseract cyrano_fra_cover.jpg cyrano_fra_cover_out -l fra+eng
 ```
 
+## OCR Engine Modes (OEM)
+Tesseract has several modes which offer different approaches to OCR. The older modes (Tesseract 3 and older), implement a classic OCR predictive approach. Newer models use machine learning (LSTM). Tesseract offers little documentation on their models. 
+
+View OCR engine models available:
+```
+tesseract --help-oem 
+```
+
+Output:
+```
+OCR Engine modes:
+  0    Legacy engine only.
+  1    Neural nets LSTM engine only.
+  2    Legacy + LSTM engines.
+  3    Default, based on what is available.
+
+```
+
+Not every language or script has been trained for LSTM, so the default mode runs an engine based on what training data is available. The newer approach using LSTM only, ```--oem 1``` is slower, but often produces better results.
+
+
+
+
 ## Page Segmentation Modes (PSM)
 Page segmentation refers to the structure of the text on the file, whether the page contains a single block of text, columns, a single word, a word in a circle, etc. Tesseract assumes a single block of text. You can improve text detection by manually setting the page segmentation mode. 
 
@@ -72,7 +104,7 @@ Page segmentation modes:
 
 Resource: [Page segmentation modes explained with clear examples](https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/)
 
-### Example: Improve text detection with PSM
+**Example: Improve text detection with PSM**
 
 The following example contains a list of characters in two columns.
 
@@ -158,6 +190,24 @@ RacuENEAU
 
 A Cut-Purse
 
+Le Brer
+
+A Spectator
+
+Carson DE CasTEL-JALOUX
+
+A Sentry
+
 ...
 
 ```
+
+## File formats
+Can generate multiple types of files:
+- txt (default)
+- xml (run ```alto```)
+- tsv
+- searchable pdf (run ```pdf```)
+- hocr
+
+It is possible to generate several files at one time. ```tesseract image.png image-output alto hocr pdf txt``` Will generate four output files. image-output.alto, image-output.hocr, image-output.pdf, image-output.txt
