@@ -200,7 +200,7 @@ We can break down our script line by line:
 5.  `done`
     - Tell the shell it's done
 
-## Save and run the script
+### Save and run the script
 
 We need to save the script we wrote using `nano`:
 - Windows: `Ctrl + o` plus `Enter`
