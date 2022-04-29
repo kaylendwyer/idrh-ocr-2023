@@ -100,7 +100,8 @@ The shell has two commonly-used wildcard characters:
 
 Wildcards help us work with multiple files at once and save typing.
 
-Instead of `head 829-0.txt 33504-0.txt` to see the first 10 lines of two files, we can use a wildcard: `head *.txt`
+Instead of `head 829-0.txt 33504-0.txt` to see the first 10 lines of two files, we can use a wildcard:
+- `head *.txt`
 
 ### Redirect and Append
 
@@ -126,6 +127,84 @@ We can combine this into one command by telling `cp` to put the copied file in t
 
 To clean up our workspace, we can delete files and directories we don't need:
 - `rm book-titles.txt` means "remove" the file
-- `rmdir firstdir` means "remove a directory
+- `rmdir firstdir` means "remove a directory"
 
-`rm` and `rmdir` are permanent and forever in the shell. There is no recycle bin or trash can to save you. Be careful what and when you delete.
+`rm` and `rmdir` are **permanent and forever** in the shell. There is no recycle bin or trash can to save you. Be careful what and when you delete.
+
+---
+
+## Loops and Scripts
+
+A loop allows us to apply one or more commands to any number of files. We can save the loop into a file to create a script that we can use over and over. For the sake of time we will do both of these operations at once.
+
+### Create a script file
+
+When writing a script it's important to use a **plain text editor** instead of a word processor. In the shell, we can use a simple plain text editor called `nano`. We want to name our script in a way that says what the script does. The file extension `.sh` means this is a shell script:
+- `nano list-books.sh`
+
+In `nano` we see a blank screen and some commands at the bottom. The `^` character means "control". To activate one of these commands:
+- In Windows, type the `Ctrl` key plus the letter
+- In Mac, type the `Cmd` key plus the letter
+
+### Write a script
+
+In any script, it's a good idea to include some comments to tell someone else, or your future self, what the script is for and how to use it. To avoid having the shell try to interpret our comments as commands, we need to start each new line with the comment character `#`:
+
+     # Loop over a set of text files and extract information into a new file:
+     # The filename
+     # The first line of the file
+     # Usage: bash list-books.sh
+
+Let's save what we've done so far. In `nano` this is called "Write Out". We can see at the bottom of the screen that the command for "Write Out". or save, is `^O`:
+- Windows: `Ctrl + o` followed by `Enter`
+- Mac: `Cmd + o` followed by `Enter`
+
+### Write a loop
+
+Below our comments, we can write the script. This script is one loop. A loop is a way to give the shell a list of things, some instructions to carry out on those things, and a structure for completing those instructions one thing at a time. The basic structure of a loop is:
+
+     for thing in list-of-things
+     do
+          operation-using $thing    # Indentation within the loop is not required, but aids legibility
+     done
+
+Let's see what this looks like:
+
+     for file in *.txt
+     do
+          echo $file >> book-titles.txt
+          head -n 1 $file >> book-titles.txt
+     done
+
+We can break down our script line by line:
+1.  `for file in *.txt`
+    - `file` is our variable name. Any name will work but it's good practice to use a name that's self-explanatory.
+    - `*.txt` is our list-of-things. We use the `*` wildcard to say "All files that end in .txt"
+2.  `do`
+    - Always comes next; tells the shell that the next section are the actions to take.
+3.  `echo $file >> book-titles.txt`
+    - `echo` is a command that shouts back whatever you give it
+    - `$` calls whatever is in the variable. In this case, `$file` calls whatever is in the `file` variable we created on line 1.
+    - `>> book-titles.txt` appends the results of `echo $file` into a file called `book-titles.txt`
+4.  `head -n 1 $file >> book-titles.txt`
+    - Append the first line of whatever file is currently in the variable to the file `book-titles.txt`
+5.  `done`
+    - Tell the shell it's done
+
+## Save and run the script
+
+We need to save the script we wrote using `nano`:
+- Windows: `Ctrl + o` plus `Enter`
+- Mac: `Cmd + o`  plus `Enter`
+
+In order to run the script, we need to exit `nano`. At the bottom of the screen we can see that `^X` means `Exit`:
+- Windows: `Ctrl + x`
+- Mac: `Cmd + x`
+
+Now we can run the script. We need to use the name of the shell we are using as the command to run the script:
+- `bash list-books.sh`
+
+Now look for the output file, `book-titles.txt`, and look inside:
+- `cat book-titles.txt`
+
+Contents will be file name and first line of the file in order by file name.
