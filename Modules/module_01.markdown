@@ -8,6 +8,15 @@ parent: Modules
 
 # Introduction to the Shell
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## What is the shell?
 
 - A program that allows you to interact with your computer using typed text commands
