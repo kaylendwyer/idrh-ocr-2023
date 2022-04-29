@@ -78,6 +78,7 @@ OCR Engine modes:
 Not every language or script has been trained for LSTM, so the default mode runs an engine based on what training data is available. The newer approach using LSTM only, ```--oem 1``` is slower, but often produces better results.
 
 
+Resource: Smith, R. (2007). An Overview of the Tesseract OCR Engine. Ninth International Conference on Document Analysis and Recognition (ICDAR 2007) Vol 2, 629–633.https://doi.org/10.1109/ICDAR.2007.4376991
 
 
 ## Page Segmentation Modes (PSM)
