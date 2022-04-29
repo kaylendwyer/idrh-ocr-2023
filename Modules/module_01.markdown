@@ -168,7 +168,7 @@ Below our comments, we can write the script. This script is one loop. A loop is 
           operation-using $thing    # Indentation within the loop is not required, but aids legibility
      done
 
-Let's see what this looks like:
+Let's use this structure for our own loop:
 
      for file in *.txt
      do
