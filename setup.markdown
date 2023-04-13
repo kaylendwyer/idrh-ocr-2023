@@ -22,11 +22,13 @@ After installing the software
 
 ### Where to type commands ####
 **Windows**
+
 Computers with Windows operating systems do not automatically have a Unix Shell program installed. In this lesson, we encourage you to use an emulator included in [Git for Windows](https://carpentries.github.io/workshop-template/#shell), which gives you access to both Bash shell commands and Git.
 
 Once installed, you can open a terminal by running the program Git Bash from the Windows start menu.
 
 **macOS**
+
 For a Mac computer running macOS Mojave or earlier releases, the default Unix Shell is Bash. For a Mac computer running macOS Catalina or later releases, the default Unix Shell is Zsh. Your default shell is available via the Terminal program within your Utilities folder.
 
 To open Terminal, try one or both of the following:
