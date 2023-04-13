@@ -7,22 +7,20 @@ nav_order: 2
 
 # Setting things up
 
-## Workshop setup
-
-### Download files
+## Download files
 You will need to download some files for the Shell lesson.
 1. Download [files coming soon!] and move them to your Desktop.
 2. Unzip/extract the file. **Let your instructor know if you need help with this step.** You should end up with a new folder called ```shell-lesson-data``` on your Desktop.
 
-### Install software
+## Install software
 If you do not already have the shell software installed, you will need to [download and install it](https://carpentries.github.io/workshop-template/#shell).
 
-### Open a new shell
+## Open a new shell
 After installing the software
 1. Open a terminal. If you're not sure how to open a terminal on your operating system, see the instructions below.
 2. In the terminal type ```cd``` then press the **Return** key. This step will make sure you start with your home folder as your working directory.
 
-#### Where to type commands ####
+### Where to type commands ####
 **Windows**
 Computers with Windows operating systems do not automatically have a Unix Shell program installed. In this lesson, we encourage you to use an emulator included in [Git for Windows](https://carpentries.github.io/workshop-template/#shell), which gives you access to both Bash shell commands and Git.
 
