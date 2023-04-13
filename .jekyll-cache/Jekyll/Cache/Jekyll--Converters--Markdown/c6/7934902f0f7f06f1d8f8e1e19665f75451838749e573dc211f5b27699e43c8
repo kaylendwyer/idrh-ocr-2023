@@ -1,4 +1,4 @@
-<h1 id="hocr-output">hOCR Output</h1>
+I"O‰<h1 id="hocr-output">hOCR Output</h1>
 
 <p>hOCR encodes the text, page layout in coordinates, and confidence intervals of text recognition into an HTML structured document. hOCR is useful when the <em>structure</em> of a document is important to data collection.</p>
 
@@ -652,3 +652,4 @@ Click to see full image: <a href="https://www.familysearch.org/en/wiki/Massachus
 
 </code></pre></div>  </div>
 </details>
+:ET

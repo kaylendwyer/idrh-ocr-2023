@@ -1,4 +1,4 @@
-<h1 id="getting-started-with-ocr">Getting started with OCR</h1>
+I";<h1 id="getting-started-with-ocr">Getting started with OCR</h1>
 <p>Before getting started with OCR, we need to make sure our images will produce results with high enough accuracy to be useful for our needs. Let’s consider what makes an image a poor candidate for OCR and preprocessing tasks that can improve image quality.</p>
 
 <h2 id="image-selection">Image Selection</h2>
@@ -47,3 +47,4 @@
 
 <p>The materials for the OCR lessons include contributions from and adaptions to lessons: (1) <a href="https://gitlab.com/nmwolf/widh-nycdh-2021/-/tree/main">Build Your Own Text-as-Data Corpus: A Print-to-Bytes Primer</a> from WIDH@NYCDH Week 2021 CC-BY-NC, Nicholas Wolfe; and (2) <a href="https://github.com/hlj24/tapi_2021_ocr">Images to Text: A Gentle Introduction to Optical Character Recognition with PyTesseract</a> from the 2021 Text Analysis Pedagogy Institute CC-BY, Hannah Jacobs.</p>
 
+:ET

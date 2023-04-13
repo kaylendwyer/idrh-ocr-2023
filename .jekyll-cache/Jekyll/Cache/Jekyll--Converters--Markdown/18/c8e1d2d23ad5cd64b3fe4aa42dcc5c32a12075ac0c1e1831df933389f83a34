@@ -1,4 +1,4 @@
-<h1 id="tesseract-on-100s-1000s-of-files">Tesseract on 100s, 1000s of Files</h1>
+I"š<h1 id="tesseract-on-100s-1000s-of-files">Tesseract on 100s, 1000s of Files</h1>
 
 <p>The real benefit to using Tesseract over other OCR tools is the speed and ease of processing batches of files.</p>
 
@@ -66,3 +66,4 @@ house door: Scrooge and Marley. The firm was
 </code></pre></div></div>
 <p>If it has run correctly, there will not be any message. To check if the file has been written correctly, we can run <code class="language-plaintext highlighter-rouge">cat</code>, <code class="language-plaintext highlighter-rouge">less</code>, <code class="language-plaintext highlighter-rouge">head</code>, or <code class="language-plaintext highlighter-rouge">tail</code>.</p>
 
+:ET
