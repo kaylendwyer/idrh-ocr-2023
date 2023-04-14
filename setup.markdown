@@ -18,8 +18,6 @@ However, if you are not from KU, you will need one of the following:
 
 This workshop uses an image in Jupyter Hub, allowing each student to run tesseract in the command line without installation. Our goal is to offer an introduction to OCR and Tesseract without additional tools mediating or confusing that process.
 
-## Downloads
-You will need to download some files for the Shell lesson. [files coming soon!] 
 
 ## Working from home
 ### Install software
