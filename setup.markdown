@@ -7,15 +7,27 @@ nav_order: 2
 
 # Setting things up
 
-## Download files
+Attendees do not need to install anything to their own systems.
+
+However, if you are not from KU, you will need one of the following:
+
+* Shibboleth
+* InCommon institutional login
+* GitHub account
+* ORCID account
+
+This workshop uses an image in Jupyter Hub, allowing each student to run tesseract in the command line without installation. Our goal is to offer an introduction to OCR and Tesseract without additional tools mediating or confusing that process.
+
+## Downloads
 You will need to download some files for the Shell lesson.
 1. Download [files coming soon!] and move them to your Desktop.
 2. Unzip/extract the file. **Let your instructor know if you need help with this step.** You should end up with a new folder called ```shell-lesson-data``` on your Desktop.
 
-## Install software
+## Working from home
+### Install software
 If you do not already have the shell software installed, you will need to [download and install it](https://carpentries.github.io/workshop-template/#shell).
 
-## Open a new shell
+### Open a new shell
 After installing the software
 1. Open a terminal. If you're not sure how to open a terminal on your operating system, see the instructions below.
 2. In the terminal type ```cd``` then press the **Return** key. This step will make sure you start with your home folder as your working directory.
@@ -42,8 +54,8 @@ If your machine is set up to use something other than Bash, you can run it by op
 Read: [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
 
 
-## Installing Tesseract
-We will not install Tesseract for this workshop, but if you would like to use tesseract on your own machine, follow the [installation guidelines in the tesseract documentation.](https://tesseract-ocr.github.io/tessdoc/#compiling-and-installation)
+### Installing Tesseract
+If you would like to use tesseract on your own machine, follow the [installation guidelines in the tesseract documentation.](https://tesseract-ocr.github.io/tessdoc/#compiling-and-installation)
 
 
 If you do not have administrator rights to your computer, you will need to configure Tesseract specially to use it.
